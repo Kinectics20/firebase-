@@ -13,8 +13,8 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var time = new DateTime.fromMillisecondsSinceEpoch(
-        snapshot.docs[index].get('timestamp').seconds * 1000);
-    var dateformatted = new DateFormat('EEEE,MMM,D,Y').format(time);
+        snapshot.docs[index]['timestamp'].seconds * 1000);
+    var dateformatted = new DateFormat('dd-MM-yyyy').format(time);
     return Container(
       height: 150,
       child: Card(
@@ -25,10 +25,10 @@ class CustomCard extends StatelessWidget {
             ListTile(
               leading: CircleAvatar(
                 radius: 34,
-                child: Text(snapshot.docs[index].get('title').toString()[0]),
+                child: Text(snapshot.docs[index].get('name').toString()[0]),
               ),
               subtitle: Text(snapshot.docs[index].get('description')),
-              title: Text(snapshot.docs[index].get('title')),
+              title: Text(snapshot.docs[index].get('name')),
             ),
             Text((dateformatted))
           ],
