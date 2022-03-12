@@ -2,6 +2,7 @@ import 'package:firebase_app/card.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:intl/intl.dart';
 
 class Board extends StatefulWidget {
   const Board({Key? key}) : super(key: key);
@@ -43,8 +44,10 @@ class _BoardState extends State<Board> {
               return ListView.builder(
                   itemCount: snapshot.data.docs.length,
                   itemBuilder: (context, int index) {
-                    //  return Text(snapshot.data!.docs[index]['description']);
-                    return CustomCard(snapshot:snapshot.data,index:index);
+                    return CustomCard(
+                      snapshot: snapshot.data,
+                      index: index,
+                    );
                   });
             }));
   }
