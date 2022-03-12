@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807875866174",
+    "project_id": "fluttermeetingapp-df913",
+    "storage_bucket": "fluttermeetingapp-df913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807875866174:android:92c8d544a22ede02fe6b6f",
+        "android_client_info": {
+          "package_name": "com.example.firebase_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807875866174-el64a0advmgp56k2nk63dgnkrh013hmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpYHVbomi205OcU5LvsRcl-ICdm1KjmsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807875866174-el64a0advmgp56k2nk63dgnkrh013hmg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
